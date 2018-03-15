@@ -1,0 +1,14 @@
+<h3>User Details</h3>
+<table class='table table-bordered'>
+  <thead>
+    <tr><th>S.No</th><th>Name</th><th>UserName</th><th>Email</th></tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of userList let i=index">
+      <td>{{i+1}}</td>
+      <td [innerHtml]="user.name"></td>
+      <td [innerHtml]="user.username"></td>
+      <td [innerHtml]="user.email"></td>
+    </tr>
+  </tbody>
+</table>

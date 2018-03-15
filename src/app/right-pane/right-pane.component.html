@@ -1,0 +1,13 @@
+<h3>Book Inventory Details</h3>
+<table class='table table-bordered'>
+  <thead>
+    <tr><th>S.No</th><th>Name</th><th>Author</th></tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let book of bookList let i=index">
+      <td>{{i+1}}</td>
+      <td [innerHtml]="book.name"></td>
+      <td [innerHtml]="book.author"></td>
+    </tr>
+  </tbody>
+</table>

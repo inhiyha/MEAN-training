@@ -1,0 +1,5 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+p{
+    border-top:1px solid lightgray;
+    margin-top:100px;
+}
